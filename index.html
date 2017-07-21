@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- This is the main page which displays news from the api of reddit -->
+<!-- Joel Valentine -->
+
+<head>
+    <!-- compromise character encoder tag -->
+    <meta charset="utf-8">
+    
+    <!-- setting width to size of screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- site tite -->
+    <title>Politics Central</title>
+    
+    <!-- linking to recourses -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="api.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+	<!-- Preloader -->
+    <div class="preloader">
+		<div class="rounder"></div>
+    </div>
+	<div class="container">
+        <div class="row">
+	        <!-- 3/12 colums wide -->
+            <div class="col-md-3">
+				<!-- Site title -->
+				<h1 align="center">Politics Central Reddit</h1>
+            </div>
+			<!-- 9/12 colums wide -->
+			<div class="col-md-9">
+				<br></br>
+				<!-- Buttons for partys -->
+				<input type="button" class="submit" id="subCON" name="submit" value="Conservetive Party News" />
+				<input type="button" class="submit" id="subLAB" name="submit" value="Labour Party News" />
+				<input type="button" class="submit" id="subLID" name="submit" value="Liberal Demacrat Party News" />
+				<input type="button" class="submit" id="subGRE" name="submit" value="Green Party News" />
+				<br></br>
+				<br></br>
+				<!-- Contents -->
+				<div id="content"></div>
+			</div>
+		</div>
+	</div>	
+</body>
+
+<!-- All Javascript Plugins  -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugin.js"></script>
+    
+<!-- Main Javascript File  -->
+<script type="text/javascript" src="js/scripts.js"></script>
